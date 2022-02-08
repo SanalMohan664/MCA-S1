@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <title>String</title>
+        <script>
+            function len()
+            {
+                a=document.getElementById("a").value
+                l=a.length;
+                result=document.getElementById("r").value=l
+            }
+            function sli()
+            {
+                a=document.getElementById("a").value
+                s=a.slice(3,5);
+                result=document.getElementById("r").value=s
+            }   
+            function substring()
+            {
+                a=document.getElementById("a").value
+                i=a.substr(5);
+                result=document.getElementById("r").value=i
+            }
+            function uppercase()
+            {
+                a=document.getElementById("a").value
+                u=a.toUpperCase();
+                result=document.getElementById("r").value=u
+            }
+            function lowercase()
+            {
+                a=document.getElementById("a").value
+                u=a.toLowerCase();
+                result=document.getElementById("r").value=u
+            }
+            function round()
+            {
+                a=document.getElementById("num").value
+                u=Math.round(a);
+                result=document.getElementById("res").value=u
+            }
+            function ceil()
+            {
+                a=document.getElementById("num").value
+                u=Math.ceil(a);
+                result=document.getElementById("res").value=u
+            }
+            function floor()
+            {
+                a=document.getElementById("num").value
+                u=Math.floor(a);
+                result=document.getElementById("res").value=u
+            }
+            function trunc()
+            {
+                a=document.getElementById("num").value
+                u=Math.trunc(a);
+                result=document.getElementById("res").value=u
+            }
+            function sign()
+            {
+                a=document.getElementById("num").value
+                u=Math.sign(a);
+                result=document.getElementById("res").value=u
+            }
+            function sqrt()
+            {
+                a=document.getElementById("num").value
+                u=Math.sqrt(a);
+                result=document.getElementById("res").value=u
+            }
+
+        </script>
+    </head>
+    <body>
+        <div>
+        <table>
+            <tr>
+                <td> String:<input type="text" id="a"><br></td>
+                <td> Result:<input type="text" id="r"></td>
+                <td><button type="submit" onclick="len()">len</button></td>
+                <td><button type="submit" onmouseenter="sli()">slice</button></td>
+                <td><button type="submit" onmouseleave="substring()">substr</button></td>
+                <td><button type="submit" onmouseenter="uppercase()">upper</button></td>
+                <td><button type="submit" onclick="lowercase()">lower</button></td>
+            </tr>
+        </table>
+        </div>
+        <div>
+        <table>
+            <tr>
+                <td> Number:<input type="number" id="num"></td>
+                <td> Result:<input type="number" id="res"></td>
+                <td><button type="submit" onclick="round()">roundof</button></td>
+                <td><button type="submit" onclick="ceil()">ceil</button></td>
+                <td><button type="submit" onclick="floor()">floor</button></td>
+                <td><button type="submit" onclick="trunc()">trunc</button></td>
+                <td><button type="submit" onclick="sign()">sign</button></td>
+                <td><button type="submit" onclick="sqrt()">sqrt</button></td>
+            </tr>
+        </table>
+    </div>
+    </body>
+</html>
+    
