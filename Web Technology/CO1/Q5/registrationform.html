@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>
+            Form
+        </title>
+    </head>
+    <body background="img.jpg" style="color: bisque;">
+        <h2 style="color: tomato;" align="center">REGISTRATION</h2><br><br>
+        <form align="center">
+            <table align="center" colspan="5">
+                <tr>
+                    <td><label for="fname"><b>First name:</b></label></td>
+                    <td><input style="background-color: lightgray;" type="text" id="fname" name="name"><br><br></td>
+                </tr>
+                <tr>    
+                    <td><label for="lname"><b>Last name:</b></label></td>
+                    <td><input style="background-color: lightgray;"type="text" id="lname" name="name"><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="DOB"><b>Date of birth:</b></label></td>
+                    <td><input style="background-color: lightgray;"type="date" id="DOB" name="DOB"><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="age"><b>Age:</b></label></td>
+                    <td><input style="background-color: lightgray;"type="number" id="age" name="age"><br><br></td>
+                </tr>
+                <tr>
+                    <td><strong>Gender:</strong></td>
+                    <td><label for="male">Male:</label>
+                    <input type="radio" id="male" name="gender">
+                    <label for="female">Female:</label>
+                    <input type="radio" id="female" name="gender">
+                    <label for="others">Others:</label>
+                    <input type="radio" id="others" name="gender"></td>
+                </tr>
+                <tr>
+                    <td><label for="address"><b>Address:</b></label></td>
+                    <td><input style="background-color: lightgray;"type="text" cols="80" rows="5" id="address" name="address"><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="no"><b>Mob:</b></label></td>
+                    <td><input style="background-color: lightgray;"type="number" id="no" name="mobno"><br><br></td>
+                </tr>
+                <tr>    
+                    <td><label for="email"><b>Email Id:</b></label></td>
+                    <td><input style="background-color: lightgray;"type="email" id="email" name="email"><br><br></td>
+                </tr>
+                <tr>
+                    <td><strong>Qualification:</strong></td>
+                    <td><label for="SSLC"><b>SSLC:</b></label>
+                    <input style="background-color: lightgray;"type="checkbox" id="SSLC" name="qualification">
+                    <label for="plustwo"><b>Plus Two:</b></label>
+                    <input style="background-color: lightgray;"type="checkbox" id="plustwo" name="qualification">
+                    <label for="ug"><b>UG:</b></label>
+                    <input style="background-color: lightgray;"type="checkbox" id="ug" name="qualification">
+                    <label for="pg"><b>PG:</b></label>
+                    <input style="background-color: lightgray;"type="checkbox" id="pg" name="qualification"></td>
+                </tr>
+                <tr>
+                    <td><label for="interests"><b>Interests:</b></label></td>
+                    <td><select id="interests" name="interests" multiple>
+                        <option value="music">Music</option>
+                        <option value="movies">Movies</option>
+                        <option value="reading">Reading</option>
+                        <option value="gaming">Gaming</option>
+                        <option value="programming">Programming</option>
+                        <option value="footbal">Football</option>
+                        <option value="cricket">Cricket</option>
+                        <option value="other">Other games</option>
+                    </select></td>
+                </tr>
+                <tr>    
+                    <td><label for="pswd"><b>Enter Password:</b></label></td>
+                    <td><input style="background-color: lightgray;" type="password" pattern="" id="fname" name="name"></td>
+                </tr>
+            </table><br>
+            <input type="submit" value="Submit">       
+        </form>
+    </body>
+</html>
