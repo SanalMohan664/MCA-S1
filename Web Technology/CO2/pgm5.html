@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page</title>  
+    <style>
+
+    </style>
+    <script>
+        document.getElementById("content").onmouseover=f1()
+       
+        function f1()
+        {
+            document.getElementById("img1")
+            document.getElementById("h1").style.display="none";
+            document.getElementById("h2").style.display="block";
+        }
+        function f2()
+        {
+            document.getElementById("img2")
+            document.getElementById("h2").style.display="none";
+            document.getElementById("h1").style.display="block";
+        }
+    </script>
+</head>
+<body>
+    <div class="content" id="content">
+        <img src="download.jpg" id="img1">
+        <img src="img2.jpg" id="img2">
+        <h1 id="h1">Hello World</h1>
+        <h1 id="h2">Hello Shibili</h1>
+    </div>
+    
+</body>
+</html>>
