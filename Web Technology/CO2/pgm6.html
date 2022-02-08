@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <title>Online Exam</title>
+        <script>
+            function score(){
+                val=0;
+                if(document.getElementById('aob').checked)
+                {
+                    val++;
+                }
+                if(document.getElementById('h1').checked)
+                {
+                    val++;
+                }
+                if(document.getElementById('float').checked)
+                {
+                    val++;
+                }
+                if(document.getElementById('html').checked)
+                {
+                    val++;
+                }
+                alert("Total mark is " + val);
+                result=document.getElementById("res").value=val
+            }
+            </script>
+    </head>
+    <body>
+       <table>
+
+           <tr>
+           <td> 1. An HTML document can contain _____</td>
+           </tr>
+           <tr>
+            <td><input type="radio" id="att" name="one">
+               <label for="att">Attributes</label>
+            </td>
+           </tr>
+           <tr>
+            <td><input type="radio" id="tag" name="one">
+                <label for="tag">Tags</label>
+            </td>
+           </tr>
+           <tr>
+            <td><input type="radio" id="rt" name="one">
+                <label for="rt">Raw text</label>
+            </td>
+           </tr>
+           <tr>
+            <td><input type="radio" id="aob" name="one">
+                <label for="aob">All of the above</label>
+            </td>
+           </tr>
+
+           <tr>
+            <td> 2. Choose the correct HTML tag for a large title.</td>
+            </tr>
+            <tr>
+            <td><input type="radio" id="h1" name="two">
+                <label for="h1">H1</label>
+            </td>
+            </tr>
+            <tr>
+                <td> <input type="radio" id="heading" name="two">
+                    <label for="heading">HEADING</label>
+               </td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="h6" name="two">
+                    <label for="h6">H6</label>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="head" name="two">
+                    <label for="head">HEAD</label>
+                </td>
+            </tr>
+            <td> 3. If we want to place text around an image, which CSS property should we use?</td>
+            </tr>
+            <tr>
+            <td><input type="radio" id="push" name="three">
+                <label for="push">push</label>
+            </td>
+            </tr>
+            <tr>
+                <td> <input type="radio" id="float" name="three">
+                    <label for="float">float</label>
+               </td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="align" name="three">
+                    <label for="align">align</label>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="wrap" name="three">
+                    <label for="wrap">wrap</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>4. An HTML document is saved with the ____ extension.</td>
+                </tr>
+                <tr>
+                 <td><input type="radio" id="htl" name="four">
+                    <label for="htl">.htl</label>
+                 </td>
+                </tr>
+                <tr>
+                 <td><input type="radio" id="html" name="four">
+                     <label for="html">.html</label>
+                 </td>
+                </tr>
+                <tr>
+                 <td><input type="radio" id="hml" name="four">
+                     <label for="hml">.hml</label>
+                 </td>
+                </tr>
+                <tr>
+                 <td><input type="radio" id="hnl" name="four">
+                     <label for="hnl">.hnl</label>
+                 </td>
+                </tr>
+            <tr>
+                <td>
+                    <label for="res">Result</label>
+                    <input type="text" id="res" name="res">  
+                </td>
+            </tr>
+            <td><button type="submit" onclick="score()">Submit</button></td>
+            
+      </table>
+    </body>
+</html>
