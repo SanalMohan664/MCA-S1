@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>form validation</title>
+        <script>
+            function check(){
+                let mob=document.getElementById('mno').value;
+                let u=document.getElementById('uname').value;
+                let p=document.getElementById('pass').value;
+                let cp=document.getElementById('cpass').value;
+                let e=document.getElementById('email').value;
+                if(p==""){
+                    alert("Enter Password")
+                }
+                
+                else{
+                    var passw=  /^[A-Za-z]\w{7,14}$/;
+                    let k=p.match(passw)
+                    if(!k){
+                          alert("Enter an alpha numeric password")
+                        }
+                }
+
+                if(cp!==p){
+                    alert("Password must be same")
+                }
+                
+                if(e==""){
+                    alert("Enter email id")
+                }
+
+                if(mob.length<10){
+                    alert("Please Enter a ten digit Mobile Number")
+                }
+                else if(mob.isNaN()){
+                     alert("Enter a valid Mobile Number")
+                }
+                
+
+                if(u==""){
+                    alert("Fill the username field")
+                }
+                else if(u.length<5){
+                    alert("Enter a username with five characters or less")
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h2 align="center" style="font-family: sans-serif;"><ul>Registration Form</ul></h2>
+        <br><br><br><br>
+        <form>
+        <table align="center">
+            <tr>
+                <td>NAME:</td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td>Mob No:</td>
+                <td><input type="text" id="mno" required></td>
+            </tr>
+            <tr>
+                <td>Email Id:</td>
+                <td><input type="email" id="email" pattern="[a-zA-Z0-9]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}" required></td>
+              </tr>
+            <tr>
+                <td>USERNAME:</td>
+                <td><input type="text" id="uname"></td>
+            </tr>
+            <tr>
+                <td>PASSWORD:</td>
+                <td><input type="password" id="pass"></td>
+            </tr>
+            <tr>
+                <td>CONFIRM PASSWORD:</td>
+                <td><input type="password" id="cpass"></td>
+            </tr>
+            <tr>
+                <td align="center"><button onclick="check()">SUBMIT</button></td>
+            </tr>
+        </form>
+        </table>
